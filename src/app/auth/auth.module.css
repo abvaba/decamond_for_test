@@ -1,0 +1,26 @@
+.form{
+  @apply w-[clamp(200px,100%,400px)] mx-auto h-screen p-4 flex flex-col items-end justify-center gap-6;
+}
+.fieldWrapper{
+  @apply w-full flex flex-col items-start justify-center gap-2;
+  label{
+    @apply text-base font-normal text-slate-600 w-full inline-flex flex-row items-center justify-between;
+  }
+  span{
+    @apply text-sm font-light;
+    &.errorMessage{
+      @apply text-red-600 first-letter:text-yellow-400 first-letter:text-2xl
+    }
+    &.successMessage{
+      @apply text-green-600;
+    }
+  }
+  input{
+    &:focus-visible {
+      /*--tw-ring-offset-width: 0;*/
+    }
+  }
+}
+.submitBtn{
+  @apply bg-blue-600 text-white w-40;
+}

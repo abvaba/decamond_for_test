@@ -1,0 +1,12 @@
+.wrapper{
+  @apply w-[clamp(200px,100%,400px)];
+}
+.dashboardHeader{
+  @apply bg-white/[0.8] border-b border-gray-200 backdrop-blur-md p-4 flex flex-row items-center justify-between w-full fixed top-0 start-0 end-0 flex-wrap;
+  h1{
+    @apply text-2xl font-semibold text-gray-800;
+  }
+}
+.userInfoWrapper{
+  @apply w-full h-screen flex flex-row items-center justify-start gap-4 p-4 text-slate-700 font-medium text-base;
+}
